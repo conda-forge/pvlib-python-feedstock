@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: pvlib-python
@@ -10,7 +10,7 @@ source:
   md5: 552fcf215911b5bb7b7a2e5ad6a9a6e6
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
