@@ -21,6 +21,7 @@ requirements:
     - pandas >=0.14.0
     - pytz
     - six
+    - pytest-runner
 
   run:
     - python
