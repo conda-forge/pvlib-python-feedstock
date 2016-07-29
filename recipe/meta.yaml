@@ -1,4 +1,4 @@
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: pvlib-python
@@ -7,7 +7,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  md5: 1fdef1d50270d22f8d89d9032fca2730
+  md5: c22e21c4cf3d7c34a2a239e42a479c9f
 
 build:
   number: 0
@@ -17,15 +17,16 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy >=1.8.2
-    - pandas >=0.13.1
+    - numpy >=1.9.0
+    - pandas >=0.14.0
     - pytz
     - six
+    - pytest-runner
 
   run:
     - python
-    - numpy >=1.8.2
-    - pandas >=0.13.1
+    - numpy >=1.9.0
+    - pandas >=0.14.0
     - pytz
     - six
 
@@ -36,7 +37,7 @@ test:
 about:
   home: https://github.com/pvlib/pvlib-python
   license: BSD 3-Clause
-  summary: 'The PVLIB toolbox provides a set functions for simulating the performance of photovoltaic energy systems.'
+  summary: 'A set functions and classes for simulating the performance of photovoltaic energy systems.'
 
 extra:
   recipe-maintainers:
