@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: pvlib-python
@@ -7,7 +7,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  md5: c22e21c4cf3d7c34a2a239e42a479c9f
+  md5: ee58588b4582d41e1f62e838931dc256
 
 build:
   number: 0
@@ -21,7 +21,6 @@ requirements:
     - pandas >=0.14.0
     - pytz
     - six
-    - pytest-runner
 
   run:
     - python
