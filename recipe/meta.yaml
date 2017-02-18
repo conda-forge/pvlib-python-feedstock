@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.4.4" %}
 
 package:
   name: pvlib-python
@@ -7,7 +7,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  md5: 6db712d9f46adf65784bcffe21085960
+  md5: d881474333875942284cf909226830f2
 
 build:
   number: 0
