@@ -7,7 +7,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  md5: d881474333875942284cf909226830f2
+  md5: 9ee05d9e61a854129b45bc82e43101a4
 
 build:
   number: 0
