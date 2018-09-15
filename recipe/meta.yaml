@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -19,17 +19,25 @@ requirements:
     - pip
     - python
     - setuptools
-    - numpy >=1.9.0
+    - numpy >=1.10.1
     - pandas >=0.14.0
     - pytz
     - six
+    - scipy
+    - pytables
+    - numba
+    - ephem
 
   run:
     - python
-    - numpy >=1.9.0
+    - numpy >=1.10.1
     - pandas >=0.14.0
     - pytz
     - six
+    - scipy
+    - pytables
+    - numba
+    - ephem
 
 test:
   imports:
