@@ -20,8 +20,9 @@ requirements:
     - python
     - setuptools
     - numpy >=1.10.1
-    - pandas >=0.14.0
+    - pandas >=0.16.0
     - pytz
+    - requests
     - six
     - scipy
     - pytables
@@ -31,8 +32,9 @@ requirements:
   run:
     - python
     - numpy >=1.10.1
-    - pandas >=0.14.0
+    - pandas >=0.16.0
     - pytz
+    - requests
     - six
     - scipy
     - pytables
@@ -51,3 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - wholmgren
+    - cwhanse
