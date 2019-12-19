@@ -48,6 +48,7 @@ test:
 about:
   home: https://github.com/pvlib/pvlib-python
   license: BSD 3-Clause
+  license_file: LICENSE.txt
   summary: 'A set functions and classes for simulating the performance of photovoltaic energy systems.'
 
 extra:
