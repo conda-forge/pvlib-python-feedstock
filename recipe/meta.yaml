@@ -1,4 +1,4 @@
-{% set version = "0.6.3" %}
+{% set version = "0.7.0" %}
 
 package:
   name: pvlib-python
@@ -7,7 +7,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  sha256: c9d8297951f94e26cd824d67a3362d38e6fdd32950542e13cca7316deb7ddb0e
+  sha256: ee935ba52f1d4a514cc3baa743db0377af732952faf800f20ffd8071fa2107c2
 
 build:
   noarch: python
@@ -19,8 +19,8 @@ requirements:
     - pip
     - python
     - setuptools
-    - numpy >=1.10.1
-    - pandas >=0.16.0
+    - numpy >=1.12.0
+    - pandas >=0.18.1
     - pytz
     - requests
     - six
@@ -31,8 +31,8 @@ requirements:
 
   run:
     - python
-    - numpy >=1.10.1
-    - pandas >=0.16.0
+    - numpy >=1.12.0
+    - pandas >=0.18.1
     - pytz
     - requests
     - six
@@ -54,3 +54,4 @@ extra:
   recipe-maintainers:
     - wholmgren
     - cwhanse
+    - camerontstark
