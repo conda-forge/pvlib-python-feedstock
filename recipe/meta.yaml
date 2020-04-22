@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: pvlib-python
@@ -7,7 +7,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  sha256: 6db0321e652b4e470b368d74681419196ecc8dda69b48b4c1e95ec36d7b41ccf
+  sha256: 40708492ed0a41e900d36933b9b9ab7b575c72ebf3eee81293c626e301aa7ea1
 
 build:
   noarch: python
@@ -49,7 +49,7 @@ about:
   home: https://github.com/pvlib/pvlib-python
   license: BSD 3-Clause
   license_file: LICENSE
-  summary: 'A set functions and classes for simulating the performance of photovoltaic energy systems.'
+  summary: A set functions and classes for simulating the performance of photovoltaic energy systems.
 
 extra:
   recipe-maintainers:
