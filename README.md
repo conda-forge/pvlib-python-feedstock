@@ -5,7 +5,7 @@ Home: https://github.com/pvlib/pvlib-python
 
 Package license: BSD 3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A set functions and classes for simulating the performance of photovoltaic energy systems.
 
@@ -116,7 +116,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@camerontstark](https://github.com/camerontstark/)
 * [@cwhanse](https://github.com/cwhanse/)
+* [@kanderso-nrel](https://github.com/kanderso-nrel/)
+* [@mikofski](https://github.com/mikofski/)
 * [@wholmgren](https://github.com/wholmgren/)
 
