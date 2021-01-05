@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: pvlib-python
@@ -7,7 +7,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  sha256: a8e68d5dd227ed6f6591b593352db41991364e037d9cc99b97fc51192587c3e2
+  sha256: 3e735627c625e7e3777dec44ce5343600e0a96bce2077ad2563be5ac5f223352
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
     - numpy >=1.12.0
     - pandas >=0.22.0
     - pip
-    - python
+    - python >=3.6
     - pytz
     - requests
     - scipy >=1.2.0
@@ -33,7 +33,7 @@ requirements:
     - numpy >=1.12.0
     - pandas >=0.22.0
     - pip
-    - python
+    - python >=3.6
     - pytz
     - requests
     - scipy >=1.2.0
@@ -50,7 +50,7 @@ test:
 
 about:
   home: https://github.com/pvlib/pvlib-python
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: A set functions and classes for simulating the performance of photovoltaic energy systems.
 
