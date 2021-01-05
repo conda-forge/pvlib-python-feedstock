@@ -19,7 +19,7 @@ requirements:
     - numpy >=1.12.0
     - pandas >=0.22.0
     - pip
-    - python
+    - python >=3.6
     - pytz
     - requests
     - scipy >=1.2.0
@@ -33,7 +33,7 @@ requirements:
     - numpy >=1.12.0
     - pandas >=0.22.0
     - pip
-    - python
+    - python >=3.6
     - pytz
     - requests
     - scipy >=1.2.0
