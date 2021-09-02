@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -29,6 +29,7 @@ requirements:
     - netcdf4
     - cftime >=1.1.1
     - statsmodels
+    - dataclasses; python_version < "3.7"
   run:
     - numpy >=1.12.0
     - pandas >=0.22.0
@@ -43,6 +44,7 @@ requirements:
     - netcdf4
     - cftime >=1.1.1
     - statsmodels
+    - dataclasses; python_version < "3.7"
 
 test:
   imports:
