@@ -29,7 +29,7 @@ requirements:
     - netcdf4
     - cftime >=1.1.1
     - statsmodels
-    - dataclasses; python_version < "3.7"
+    - dataclasses  # [py<37]
   run:
     - numpy >=1.12.0
     - pandas >=0.22.0
@@ -44,7 +44,7 @@ requirements:
     - netcdf4
     - cftime >=1.1.1
     - statsmodels
-    - dataclasses; python_version < "3.7"
+    - dataclasses  # [py<37]
 
 test:
   imports:
