@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -30,6 +30,7 @@ requirements:
     - cftime >=1.1.1
     - statsmodels
     - importlib-metadata
+    - setuptools_scm >=6.2
   run:
     - numpy >=1.16.0
     - pandas >=0.25.0
