@@ -1,4 +1,4 @@
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 
 package:
   name: pvlib-python
@@ -7,7 +7,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  sha256: ead96f47898befd7728ab0b61b9747231008e151ef78a26d5e41d0b6a95a3a9d
+  sha256: 8c4a90bb72f750eff0a1df24d2370ec1f5584daccf5f2a477ed77a2e72850eba
 
 build:
   noarch: python
@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - numpy >=1.16.0
-    - pandas >=0.22.0
+    - pandas >=0.25.0
     - pip
-    - python >=3.6
+    - python >=3.7
     - pytz
     - requests
     - scipy >=1.2.0
@@ -29,12 +29,12 @@ requirements:
     - netcdf4
     - cftime >=1.1.1
     - statsmodels
-    - dataclasses
+    - importlib-metadata
   run:
     - numpy >=1.16.0
-    - pandas >=0.22.0
+    - pandas >=0.25.0
     - pip
-    - python >=3.6
+    - python >=3.7
     - pytz
     - requests
     - scipy >=1.2.0
@@ -44,7 +44,7 @@ requirements:
     - netcdf4
     - cftime >=1.1.1
     - statsmodels
-    - dataclasses
+    - importlib-metadata
 
 test:
   imports:
