@@ -15,44 +15,44 @@ build:
 
 outputs:
   - name: {{ name }}
-  build:
-    script: {{ PYTHON }} -m pip install . --no-deps -vv
-    noarch: python
-  requirements:
-    host:
-      - numpy >=1.16.0
-      - pandas >=0.25.0
-      - pip
-      - python >=3.7
-      - pytz
-      - requests
-      - scipy >=1.2.0
-      - h5py
-      - numba
-      - ephem
-      - netcdf4
-      - cftime >=1.1.1
-      - statsmodels
-      - importlib-metadata
-      - setuptools_scm >=6.2
-    run:
-      - numpy >=1.16.0
-      - pandas >=0.25.0
-      - pip
-      - python >=3.7
-      - pytz
-      - requests
-      - scipy >=1.2.0
-      - h5py
-      - numba
-      - ephem
-      - netcdf4
-      - cftime >=1.1.1
-      - statsmodels
-      - importlib-metadata
-  test:
-    imports:
-      - pvlib
+    build:
+      script: {{ PYTHON }} -m pip install . --no-deps -vv
+      noarch: python
+    requirements:
+      host:
+        - numpy >=1.16.0
+        - pandas >=0.25.0
+        - pip
+        - python >=3.7
+        - pytz
+        - requests
+        - scipy >=1.2.0
+        - h5py
+        - numba
+        - ephem
+        - netcdf4
+        - cftime >=1.1.1
+        - statsmodels
+        - importlib-metadata
+        - setuptools_scm >=6.2
+      run:
+        - numpy >=1.16.0
+        - pandas >=0.25.0
+        - pip
+        - python >=3.7
+        - pytz
+        - requests
+        - scipy >=1.2.0
+        - h5py
+        - numba
+        - ephem
+        - netcdf4
+        - cftime >=1.1.1
+        - statsmodels
+        - importlib-metadata
+    test:
+      imports:
+        - pvlib
 
   - name: pvlib-python
     build:
