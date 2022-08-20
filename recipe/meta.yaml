@@ -1,7 +1,8 @@
+{% set name = "pvlib" %}
 {% set version = "0.9.2" %}
 
 package:
-  name: pvlib-python
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -10,46 +11,58 @@ source:
   sha256: 8c4a90bb72f750eff0a1df24d2370ec1f5584daccf5f2a477ed77a2e72850eba
 
 build:
-  noarch: python
   number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
-requirements:
-  host:
-    - numpy >=1.16.0
-    - pandas >=0.25.0
-    - pip
-    - python >=3.7
-    - pytz
-    - requests
-    - scipy >=1.2.0
-    - h5py
-    - numba
-    - ephem
-    - netcdf4
-    - cftime >=1.1.1
-    - statsmodels
-    - importlib-metadata
-    - setuptools_scm >=6.2
-  run:
-    - numpy >=1.16.0
-    - pandas >=0.25.0
-    - pip
-    - python >=3.7
-    - pytz
-    - requests
-    - scipy >=1.2.0
-    - h5py
-    - numba
-    - ephem
-    - netcdf4
-    - cftime >=1.1.1
-    - statsmodels
-    - importlib-metadata
+outputs:
+  - name: {{ name }}
+  build:
+    script: {{ PYTHON }} -m pip install . --no-deps -vv
+    noarch: python
+  requirements:
+    host:
+      - numpy >=1.16.0
+      - pandas >=0.25.0
+      - pip
+      - python >=3.7
+      - pytz
+      - requests
+      - scipy >=1.2.0
+      - h5py
+      - numba
+      - ephem
+      - netcdf4
+      - cftime >=1.1.1
+      - statsmodels
+      - importlib-metadata
+      - setuptools_scm >=6.2
+    run:
+      - numpy >=1.16.0
+      - pandas >=0.25.0
+      - pip
+      - python >=3.7
+      - pytz
+      - requests
+      - scipy >=1.2.0
+      - h5py
+      - numba
+      - ephem
+      - netcdf4
+      - cftime >=1.1.1
+      - statsmodels
+      - importlib-metadata
+  test:
+    imports:
+      - pvlib
 
-test:
-  imports:
-    - pvlib
+  - name: pvlib-python
+    build:
+      noarch: python
+    requirements:
+      run:
+        - {{ pin_subpackage(name, exact=True) }}
+    test:
+      imports:
+        - pvlib
 
 about:
   home: https://github.com/pvlib/pvlib-python
