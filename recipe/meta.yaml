@@ -16,8 +16,8 @@ build:
 outputs:
   - name: {{ name }}
     build:
-      script: {{ PYTHON }} -m pip install . --no-deps -vv
       noarch: python
+      script: {{ PYTHON }} -m pip install . --no-deps -vv
     requirements:
       host:
         - numpy >=1.16.0
