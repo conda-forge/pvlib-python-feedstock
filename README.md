@@ -1,5 +1,5 @@
-About pvlib-python
-==================
+About pvlib
+===========
 
 Home: https://github.com/pvlib/pvlib-python
 
@@ -27,53 +27,54 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pvlib-green.svg)](https://anaconda.org/conda-forge/pvlib) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pvlib.svg)](https://anaconda.org/conda-forge/pvlib) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pvlib.svg)](https://anaconda.org/conda-forge/pvlib) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pvlib.svg)](https://anaconda.org/conda-forge/pvlib) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-pvlib--python-green.svg)](https://anaconda.org/conda-forge/pvlib-python) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pvlib-python.svg)](https://anaconda.org/conda-forge/pvlib-python) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pvlib-python.svg)](https://anaconda.org/conda-forge/pvlib-python) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pvlib-python.svg)](https://anaconda.org/conda-forge/pvlib-python) |
 
-Installing pvlib-python
-=======================
+Installing pvlib
+================
 
-Installing `pvlib-python` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `pvlib` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pvlib-python` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `pvlib, pvlib-python` can be installed with `conda`:
 
 ```
-conda install pvlib-python
-```
-
-or with `mamba`:
-
-```
-mamba install pvlib-python
-```
-
-It is possible to list all of the versions of `pvlib-python` available on your platform with `conda`:
-
-```
-conda search pvlib-python --channel conda-forge
+conda install pvlib pvlib-python
 ```
 
 or with `mamba`:
 
 ```
-mamba search pvlib-python --channel conda-forge
+mamba install pvlib pvlib-python
+```
+
+It is possible to list all of the versions of `pvlib` available on your platform with `conda`:
+
+```
+conda search pvlib --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search pvlib --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search pvlib-python --channel conda-forge
+mamba repoquery search pvlib --channel conda-forge
 
-# List packages depending on `pvlib-python`:
-mamba repoquery whoneeds pvlib-python --channel conda-forge
+# List packages depending on `pvlib`:
+mamba repoquery whoneeds pvlib --channel conda-forge
 
-# List dependencies of `pvlib-python`:
-mamba repoquery depends pvlib-python --channel conda-forge
+# List dependencies of `pvlib`:
+mamba repoquery depends pvlib --channel conda-forge
 ```
 
 
@@ -118,17 +119,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating pvlib-python-feedstock
-===============================
+Updating pvlib-feedstock
+========================
 
-If you would like to improve the pvlib-python recipe or build a new
+If you would like to improve the pvlib recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/pvlib-python-feedstock are
+Note that all branches in the conda-forge/pvlib-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
