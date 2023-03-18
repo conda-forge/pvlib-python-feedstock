@@ -1,11 +1,11 @@
-About pvlib
-===========
+About pvlib-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pvlib-python-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pvlib/pvlib-python
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pvlib-python-feedstock/blob/main/LICENSE.txt)
 
 Summary: A set functions and classes for simulating the performance of photovoltaic energy systems.
 
