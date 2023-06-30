@@ -145,7 +145,7 @@ Feedstock Maintainers
 =====================
 
 * [@cwhanse](https://github.com/cwhanse/)
-* [@kanderso-nrel](https://github.com/kanderso-nrel/)
+* [@kandersolar](https://github.com/kandersolar/)
 * [@mikofski](https://github.com/mikofski/)
 * [@wholmgren](https://github.com/wholmgren/)
 
