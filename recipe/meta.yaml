@@ -1,5 +1,5 @@
 {% set name = "pvlib" %}
-{% set version = "0.10.3" %}
+{% set version = "0.10.4" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  sha256: 024a1b523d73a633323612e7f315a1709cf06d1fd43ff0821901f66a4068b2d9
+  sha256: 0c5fa8bfe8b14a39a30bfefe5a6cf0164b2ebd82a29126db3d906a84d939f872
 
 build:
   number: 0
@@ -20,29 +20,29 @@ outputs:
       script: python -m pip install . --no-deps -vv
     requirements:
       host:
-        - numpy >=1.16.0
-        - pandas >=0.25.0
+        - numpy >=1.17.3
+        - pandas >=1.3.0
         - pip
         - python >=3.7
         - pytz
         - requests
         - scipy >=1.5.0
         - h5py
-        - numba
+        - numba >=0.17.0
         - ephem
         - statsmodels
         - importlib-metadata
         - setuptools_scm >=6.2
       run:
-        - numpy >=1.16.0
-        - pandas >=0.25.0
+        - numpy >=1.17.3
+        - pandas >=1.3.0
         - pip
         - python >=3.7
         - pytz
         - requests
         - scipy >=1.5.0
         - h5py
-        - numba
+        - numba >=0.17.0
         - ephem
         - statsmodels
         - importlib-metadata
