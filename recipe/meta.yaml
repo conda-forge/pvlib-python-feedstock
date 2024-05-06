@@ -1,5 +1,5 @@
 {% set name = "pvlib" %}
-{% set version = "0.10.4" %}
+{% set version = "0.10.5" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  sha256: 0c5fa8bfe8b14a39a30bfefe5a6cf0164b2ebd82a29126db3d906a84d939f872
+  sha256: 23ecb9f68e0bfb02ce17e84044b521fb7e353581e538a31f9ead044ecd1950bd
 
 build:
   number: 0
@@ -23,10 +23,10 @@ outputs:
         - numpy >=1.17.3
         - pandas >=1.3.0
         - pip
-        - python >=3.7
+        - python >=3.8
         - pytz
         - requests
-        - scipy >=1.5.0
+        - scipy >=1.6.0
         - h5py
         - numba >=0.17.0
         - ephem
@@ -37,10 +37,10 @@ outputs:
         - numpy >=1.17.3
         - pandas >=1.3.0
         - pip
-        - python >=3.7
+        - python >=3.8
         - pytz
         - requests
-        - scipy >=1.5.0
+        - scipy >=1.6.0
         - h5py
         - numba >=0.17.0
         - ephem
