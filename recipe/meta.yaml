@@ -33,6 +33,7 @@ outputs:
         - statsmodels
         - importlib-metadata
         - setuptools_scm >=6.2
+        - setuptools >=61
       run:
         - numpy >=1.19.3
         - pandas >=1.3.0
