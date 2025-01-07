@@ -6,7 +6,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
   sha256: 371645f4e66c278e6cf2b1b2487c62c2bad479ff62a26ed844216d0f843cf5cc
 
@@ -17,7 +16,7 @@ outputs:
   - name: {{ name }}
     build:
       noarch: python
-      script: python -m pip install . --no-deps -vv
+      script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
     requirements:
       host:
         - numpy >=1.19.3
