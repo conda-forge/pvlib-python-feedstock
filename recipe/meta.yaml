@@ -1,5 +1,5 @@
 {% set name = "pvlib" %}
-{% set version = "0.11.2" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  sha256: 371645f4e66c278e6cf2b1b2487c62c2bad479ff62a26ed844216d0f843cf5cc
+  sha256: 222bcb7b88f228944e7f7e9317082b7182232b8d0a5d1b1499cff50027d1e964
 
 build:
   number: 0
