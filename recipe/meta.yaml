@@ -1,5 +1,5 @@
 {% set name = "pvlib" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: pvlib-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/p/pvlib/pvlib-{{ version }}.tar.gz
-  sha256: 222bcb7b88f228944e7f7e9317082b7182232b8d0a5d1b1499cff50027d1e964
+  sha256: cef36cdd932a6a7bf2dd7c992b0004b1a08d315ee8043b273d192ad57902e85a
 
 build:
   number: 0
@@ -33,7 +33,7 @@ outputs:
         - statsmodels
         - importlib-metadata
         - setuptools_scm >=6.2
-        - setuptools >=61
+        - setuptools >=70.1
       run:
         - numpy >=1.19.3
         - pandas >=1.3.0
